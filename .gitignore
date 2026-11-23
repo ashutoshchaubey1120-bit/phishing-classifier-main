@@ -1,5 +1,96 @@
-env
-artifacts
-logs
-.pyc
-pyc
+# ==========================================
+# 1. Environments & Sensitive Credentials
+# ==========================================
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+aws_credentials
+credentials.json
+
+# ==========================================
+# 2. Bytecode & Python Cache
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==========================================
+# 3. Virtual Environments
+# ==========================================
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+bin/
+include/
+lib/
+lib64/
+
+# ==========================================
+# 4. Packaging & Setuptools
+# ==========================================
+*.egg-info/
+.eggs/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# ==========================================
+# 5. Machine Learning Models & Heavy Artifacts
+# ==========================================
+artifacts/
+*.pkl
+*.h5
+*.joblib
+*.pt
+*.pth
+*.onnx
+model.pkl
+
+# ==========================================
+# 6. Prediction Runs & Dynamic Outputs
+# ==========================================
+predictions/
+prediction_artifacts/*
+!prediction_artifacts/phisingtest.csv
+
+# ==========================================
+# 7. Logs & Process Dumps
+# ==========================================
+logs/
+*.log
+
+# ==========================================
+# 8. Jupyter Notebook Checkpoints
+# ==========================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# 9. IDEs & OS Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# 10. Docker
+# ==========================================
+.docker/
